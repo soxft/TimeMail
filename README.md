@@ -1,5 +1,13 @@
 # TimeMail
+[![](https://data.jsdelivr.com/v1/package/gh/soxft/TimeMail/badge)](https://www.jsdelivr.com/package/gh/soxft/TimeMail)
+<a href="http://www.apache.org/licenses/LICENSE-2.0.html"> 
+<img src="https://img.shields.io/github/license/soxft/TimeMail.svg" alt="License"></a>
+<a href="https://github.com/soxft/TimeMail/stargazers"> 
+<img src="https://img.shields.io/github/stars/soxft/TimeMail.svg" alt="GitHub stars"></a>
+<a href="https://github.com/soxft/TimeMail/network/members"> 
+<img src="https://img.shields.io/github/forks/soxft/TimeMail.svg" alt="GitHub forks"></a> 
 
+## 简介
 > 给未来写封信<br />
 > 多年之后,愿你不负所期.<br />
 > 时间没有现在,永恒没有未来,也没有过去<br />
