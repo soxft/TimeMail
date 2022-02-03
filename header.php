@@ -19,16 +19,6 @@ V2.3_beta20200823
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/soxft/cdn@latest/mdui/css/mdui.min.css">
   <script src="https://cdn.jsdelivr.net/gh/soxft/cdn@latest/mdui/js/mdui.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/soxft/cdn@latest/time/img/favicon.ico" media="screen" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159315608-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-159315608-3');
-  </script>
   <style>
     a {
       text-decoration:none
