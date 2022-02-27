@@ -16,8 +16,8 @@ V2.3_beta20200823
   <meta name="description" content="TimeMail时光邮局 - 给未来写封信" />
   <meta name="keywords" content="TimeMail,时光邮局,给未来写封信,xcsoft,星辰日记,php,xc-blog,soxft" />
   <title><?php echo TITLE ?></title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/soxft/cdn@latest/mdui/css/mdui.min.css">
-  <script src="https://cdn.jsdelivr.net/gh/soxft/cdn@latest/mdui/js/mdui.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/soxft/cdn@1.9/mdui/css/mdui.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/soxft/cdn@1.9/mdui/js/mdui.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/soxft/cdn@latest/time/img/favicon.ico" media="screen" />
   <style>
     a {
