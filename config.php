@@ -8,6 +8,8 @@ define("URL","http://example.com/");
 define("TITLE","TimeMail - 给未来写封信");
 //网站名称
 
+define("DEBUG", false);
+
 define('EMAIL_SET',array(
   'key' => 'rand', //随机值
   'smtp' => 'smtp.exmail.qq.com',   //SMTP 用户名  即邮箱的用户名
@@ -32,7 +34,7 @@ $conn = mysqli_connect(DATABASE[0],DATABASE[1],DATABASE[2],DATABASE[3]);
 $conns = mysqli_connect(DATABASE[0],DATABASE[1],DATABASE[2],"information_schema");
 
 
-define("EMAILAPI",URL . "email/emailsend.php");
+define("EMAILAPI", URL . "email/emailsend.php");
 
 /*
   function
