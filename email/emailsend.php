@@ -77,17 +77,13 @@ try {
     $mail->Subject = $topic; 
     $mail->Body    = $content; 
     $mail->send(); 
-     $data = array(//向服务器返回token
-    'code' => '200'
-  );
-  $data_json = json_encode($data);
-  header('Content-type:text/json');
-  echo $data_json;
+    header('Content-type:text/json');
+    echo  json_encode(["code" => "200", "msg" => "success"]);
 } catch (Exception $e) { 
-    $data = array(//向服务器返回token
-    'code' => 'error'
-  );
-  $data_json = json_encode($data);
-  header('Content-type:text/json');
-  echo $data_json;
+    $data = [
+      'code' => 'error'
+    ];
+    if (DEBUG == true) $data["errMsg"] = $e->getMessage();
+    header('Content-type:text/json');
+    echo json_encode($data);
 }
