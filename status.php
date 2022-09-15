@@ -20,6 +20,7 @@ class status {
   function __construct($conn) {
     $this->sql = $conn;
   }
+  
   function getRuntime() {
     $this->Starttime = strtotime("2020-02-01");  //开始时间
     $this->Nowtime = strtotime(date("Y-m-d"));
@@ -27,41 +28,6 @@ class status {
     $this->Runtime = abs(round($this->diff / 86400));
     echo $this->Runtime;
   }
-  /*
-  function getAverageinserval()
-  {
-    $this->waiting = mysqli_fetch_assoc(mysqli_query($this->sql,"select * from `waiting`"));
-    $this->sent = mysqli_fetch_assoc(mysqli_query($this->sql,"select * from `sent`"));
-    $this->row = new Row($conns);
-    $this->row->sent = getRow("sent");
-    $this->row->waiting = getRow("sent");
-    $this->inserval1 = $this->inserval2 = 0;
-    for($i=0;$i<=$this->row->sent;$i++)
-    {
-      $this->from = $this->sent['from'];
-      $this->to = $this ->sent['to'];
-      $this->inserval1 += $this->to-$this->from;
-    }
-    for($i=0;$i<=$this->row->waiting;$i++)
-    {
-      $this->from = $this->waiting['from'];
-      $this->to = $this ->waiting['to'];
-      $this->inserval2 += $this->to-$this->from;
-    }
-    $this->inserval = $this->inserval1 + $this->inserval2;
-    $this->inservalAverage = $this->inserva / ($this->row->sent + $this->row->waiting);
-    echo secondToesle($this->inservalAverage);
-  }
-  
-  function secondToesle($second)
-  {
-    $this->year = floor(($second - ($second % (365*24*60*60))) / (365*24*60*60));
-    return $this->year;
-  }
-  */
-  //bug....
-}
-
 // 服务是否在运行 | 已发送  | 未发送 | 发送时间段 | 累计运行时间段
 
 $status = new status($conn);
