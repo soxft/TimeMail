@@ -28,6 +28,7 @@ class status {
     $this->Runtime = abs(round($this->diff / 86400));
     echo $this->Runtime;
   }
+}
 // 服务是否在运行 | 已发送  | 未发送 | 发送时间段 | 累计运行时间段
 
 $status = new status($conn);
